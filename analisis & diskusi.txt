@@ -1,0 +1,26 @@
+1. Analisis:
+	Program ini menghasilkan tiga tampilan berbeda, yaitu frame utama, mask, dan result. Frame utama menunjukkan tampilan asli dari kamera, sementara pada frame mask, hanya bagian yang berwarna merah yang akan terlihat dalam warna hitam dan putih, sedangkan bagian lainnya akan berwarna hitam. Frame result hanya menampilkan warna merah, dengan bagian lainnya menjadi hitam. Program ini berhasil mendeteksi warna merah karena menggunakan format HSV (Hue, Saturation, Value). Kamera mengonversi gambar ke dalam format HSV, kemudian program mendeteksi warna merah berdasarkan rentang Hue, Saturation, dan Value. Masker biner yang dihasilkan menandai bagian-bagian yang berwarna merah, yang kemudian digabungkan dengan gambar asli sehingga hanya warna merah yang terlihat. Pendekatan deteksi warna menggunakan HSV ini dapat diterapkan dalam berbagai aplikasi, salah satunya adalah pada robot pemandu atau pengikut warna, yang sering digunakan dalam kompetisi robot line-follow.
+
+2. Diskusi:
+	AI dalam Computer Vision berperan untuk meningkatkan akurasi, kecepatan, dan adaptasi sistem kontrol dengan memanfaatkan algoritma seperti *CNN, YOLO, dan SSD*. Dengan ini, deteksi objek dapat dilakukan secara real-time dan memungkinkan pengambilan keputusan otomatis yang lebih akurat dibandingkan metode konvensional.  
+
+Kelebihan:
+• Memiliki keunggulan dengan proses yang cepat, efisien, serta mudah diterapkan.
+• Dengan menggunakan algoritma seperti CNN (Convolutional Neural Networks), YOLO (You Only Look Once), dan SSD (Single Shot Multibox Detector), deteksi objek bisa dilakukan dengan tingkat akurasi yang tinggi, bahkan dalam kondisi yang sangat kompleks.
+• Algoritma ini memungkinkan deteksi objek dan pengambilan keputusan secara real-time, yang sangat penting dalam aplikasi seperti kendaraan otonom, robotika, dan pengawasan.
+• Sistem berbasis AI dapat beradaptasi dengan berbagai kondisi lingkungan dan objek, misalnya dengan menyesuaikan diri pada perubahan pencahayaan atau kondisi cuaca yang berbeda.
+• AI dalam computer vision dapat diterapkan dalam berbagai bidang, mulai dari medis (misalnya, deteksi penyakit melalui gambar medis), pengawasan (kamera pengintai otomatis), hingga aplikasi di kendaraan otonom.
+• Dengan otomatisasi deteksi dan pengambilan keputusan, AI dapat mengurangi keterlibatan manusia dalam tugas-tugas yang memerlukan waktu atau berisiko tinggi, seperti pemantauan lalu lintas atau identifikasi objek berbahaya.
+• AI dapat menangani dan menganalisis data visual dalam jumlah besar dengan kecepatan dan efisiensi tinggi, sesuatu yang sulit dicapai dengan metode manual atau tradisional.
+
+Kekurangan:
+• Sensitivitas terhadap perubahan pencahayaan, kesulitan membedakan objek dengan warna serupa, dan keterbatasan dalam mengenali fitur selain warna.  
+• AI dalam computer vision sangat bergantung pada pencahayaan dan kondisi visual lainnya, sehingga performa sistem bisa menurun ketika ada perubahan drastis dalam cahaya atau cuaca (misalnya, penglihatan terbatas di malam hari atau hujan).
+• Algoritma AI, terutama pada deteksi berbasis warna, dapat kesulitan membedakan objek yang memiliki warna serupa, misalnya objek merah dan oranye yang bisa sangat mirip dalam ruang warna tertentu.
+• Meskipun dapat mendeteksi objek secara akurat, AI dalam computer vision tidak selalu dapat memahami konteks atau hubungan antar objek, yang dapat menyebabkan kesalahan dalam pengambilan keputusan dalam situasi kompleks.
+• Untuk melatih model AI dengan akurasi yang baik, dibutuhkan jumlah data yang sangat besar dan bervariasi. Pengumpulan data ini bisa memakan waktu dan biaya yang cukup tinggi.
+• Sistem AI dalam computer vision mungkin kesulitan mendeteksi objek yang tersembunyi atau terhalang oleh objek lain, terutama dalam lingkungan yang penuh sesak.
+• Algoritma canggih seperti CNN dan YOLO memerlukan daya komputasi yang cukup besar, yang bisa menjadi hambatan terutama pada perangkat dengan sumber daya terbatas (seperti perangkat mobile atau sistem embedded).
+• Model AI yang terlalu terlatih pada data tertentu dapat mengalami masalah overfitting, yang mengurangi kemampuannya untuk menggeneralisasi pada kondisi yang berbeda atau data yang tidak terlihat sebelumnya.
+
+3. Untuk meningkatkan akurasi dapat dilakukan dengan menggabungkan deteksi berbasis warna dengan analisis bentuk, tekstur, atau deep learning.
